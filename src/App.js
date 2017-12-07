@@ -27,7 +27,9 @@ class App extends React.Component {
     return(
       <div id="container">
         <header>
-          <h1>Board game Night Stats</h1>
+          <h1>The Haunted Household</h1>
+          <br/>
+          <h1>Board Game Night Stats</h1>
         </header>
         <nav>
           <ul>
@@ -44,7 +46,8 @@ class App extends React.Component {
             <input type="submit" value="Create" onClick="player()"/>
           </form>
         </div>
-        <footer>{"Copyright Andrew Robinson " + String.fromCharCode(169) + " 2017"}
+        <footer>
+          {"Copyright Andrew Robinson " + String.fromCharCode(169) + " 2017"}
         </footer>
       </div>
     )
