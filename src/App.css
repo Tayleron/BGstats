@@ -60,7 +60,7 @@ nav {
 			border-color: sienna;
 			box-shadow: 3px 3px brown;
 		}
-main {
+#main {
 	width: 1200px;
 	height: 420px;
 	box-sizing: border-box;
