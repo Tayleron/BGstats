@@ -1,4 +1,5 @@
 import React from "react";
+import Taskbar from "./taskbar.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -40,11 +41,17 @@ class App extends React.Component {
           </ul>
         </nav>
         <div id="main">
-          <form action="" id="playerCreate">
-            Create a new Player:
-            <input type="text" name="playerName" placeholder="Name"/>
-            <input type="submit" value="Create" onClick="player()"/>
-          </form>
+          <Taskbar />
+          <div id="displayPlayers">
+            <text>Name </text>
+            <text>Plays </text>
+            <text>Wins </text>
+            <text>Losses</text>
+          </div>
+          <div id="displayGames">
+            <text>Game </text>
+            <text>Plays</text>
+          </div>
         </div>
         <footer>
           {"Copyright Andrew Robinson " + String.fromCharCode(169) + " 2017"}
