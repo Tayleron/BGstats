@@ -1,6 +1,7 @@
 import React from "react";
 import Taskbar from "./taskbar.js";
-
+import DisplayPlayers from "./displayPlayers.js";
+import DisplayGames from "./displayGames.js";
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -42,16 +43,8 @@ class App extends React.Component {
         </nav>
         <div id="main">
           <Taskbar />
-          <div id="displayPlayers">
-            <text>Name </text>
-            <text>Plays </text>
-            <text>Wins </text>
-            <text>Losses</text>
-          </div>
-          <div id="displayGames">
-            <text>Game </text>
-            <text>Plays</text>
-          </div>
+          <DisplayPlayers />
+          <DisplayGames />
         </div>
         <footer>
           {"Copyright Andrew Robinson " + String.fromCharCode(169) + " 2017"}
